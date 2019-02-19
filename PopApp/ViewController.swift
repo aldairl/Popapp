@@ -16,5 +16,7 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func sitiosTuristicos(_ sender: UIButton) {
+    }
 }
 
