@@ -18,5 +18,14 @@ class ViewController: UIViewController {
 
     @IBAction func sitiosTuristicos(_ sender: UIButton) {
     }
-}
+    
+    @IBAction func escanearqr(_ sender: UIButton) {
+    }
+    
+    @IBAction func misfavoritos(_ sender: UIButton) {
+    }
+    
 
+    @IBOutlet weak var ImgPopayan: UIImageView!
+    
+}
