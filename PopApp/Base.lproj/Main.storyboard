@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -140,6 +141,7 @@
                                 <exclude reference="Cxy-R3-tO5"/>
                                 <exclude reference="RcQ-gC-EKG"/>
                                 <exclude reference="sDn-sQ-Icm"/>
+                                <exclude reference="HFu-Kw-YC4"/>
                                 <exclude reference="03Z-J4-aSQ"/>
                                 <exclude reference="Mfs-vo-vsK"/>
                                 <exclude reference="OqH-cE-AoB"/>
@@ -147,7 +149,6 @@
                                 <exclude reference="e2a-s3-cvh"/>
                                 <exclude reference="gFZ-OV-nst"/>
                                 <exclude reference="ybB-EB-erV"/>
-                                <exclude reference="HFu-Kw-YC4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -182,6 +183,9 @@
                                 <exclude reference="5be-Nq-nUF"/>
                                 <exclude reference="iAt-oo-Afv"/>
                                 <include reference="sDn-sQ-Icm"/>
+                                <exclude reference="EGa-sj-DDe"/>
+                                <include reference="HFu-Kw-YC4"/>
+                                <exclude reference="hM1-Xq-UnP"/>
                                 <exclude reference="03Z-J4-aSQ"/>
                                 <exclude reference="HRC-vq-gUb"/>
                                 <exclude reference="Mfs-vo-vsK"/>
@@ -191,9 +195,6 @@
                                 <exclude reference="e2a-s3-cvh"/>
                                 <include reference="gFZ-OV-nst"/>
                                 <exclude reference="ybB-EB-erV"/>
-                                <exclude reference="EGa-sj-DDe"/>
-                                <include reference="HFu-Kw-YC4"/>
-                                <exclude reference="hM1-Xq-UnP"/>
                             </mask>
                         </variation>
                     </view>
