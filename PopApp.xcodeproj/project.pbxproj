@@ -15,6 +15,7 @@
 		A0C39378221C1B6400655C2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C39376221C1B6400655C2E /* Main.storyboard */; };
 		A0C3937A221C1B6700655C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C39379221C1B6700655C2E /* Assets.xcassets */; };
 		A0C3937D221C1B6700655C2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C3937B221C1B6700655C2E /* LaunchScreen.storyboard */; };
+		C34B4262222C894200E0B299 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B4261222C894200E0B299 /* BarcodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A0C39379221C1B6700655C2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C3937C221C1B6700655C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C3937E221C1B6700655C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34B4261222C894200E0B299 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A0C39372221C1B6400655C2E /* AppDelegate.swift */,
 				A0C39374221C1B6400655C2E /* ViewController.swift */,
 				A0C39376221C1B6400655C2E /* Main.storyboard */,
+				C34B4261222C894200E0B299 /* BarcodeViewController.swift */,
 				96F62B8E222B941000F3CA74 /* Book.swift */,
 				962E436D222B9CAC00872A7B /* BooksManager.swift */,
 				96F62B8C222B8F1700F3CA74 /* BooksTableViewController.swift */,
@@ -149,6 +152,7 @@
 				962E436E222B9CAC00872A7B /* BooksManager.swift in Sources */,
 				A0C39373221C1B6400655C2E /* AppDelegate.swift in Sources */,
 				96F62B8D222B8F1700F3CA74 /* BooksTableViewController.swift in Sources */,
+				C34B4262222C894200E0B299 /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
