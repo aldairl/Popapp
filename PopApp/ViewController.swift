@@ -14,18 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
-    @IBAction func sitiosTuristicos(_ sender: UIButton) {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationController = segue.destination as? UINavigationController,
+        let barcodeViewController =
+        navigationController.topViewController as? BarcodeViewController {
+        barcodeViewController.delegate = self }
     }
     
-    @IBAction func escanearqr(_ sender: UIButton) {
-    }
-    
-    @IBAction func misfavoritos(_ sender: UIButton) {
-    }
-    
+}
 
-    @IBOutlet weak var ImgPopayan: UIImageView!
+extension ViewController:BarcodeViewControllerDelegate {
+    func foundBarcode(barcode:String) {
     
+    }
 }

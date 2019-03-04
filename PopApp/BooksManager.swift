@@ -17,10 +17,10 @@ class BooksManager {
         books.append(book) }
     
     private func sampleBooks()->[Book] { return [
-        Book(title: "Parques",notes: "Gift from Papa", cover: OtroCover[0]),
-        Book(title: "Iglesias",notes: "Hola", cover: OtroCover[1]),
-        Book(title: "Robinson Crusoe", notes: "Que"),
-        Book(title: "Gulliver's Travels",notes: "Hace")
+        Book(title: "Parques", cover: OtroCover[0]),
+        Book(title: "Iglesias", cover: OtroCover[1]),
+        Book(title: "Sitios Historicos"),
+        Book(title: "Museos")
         ] }
 }
 
