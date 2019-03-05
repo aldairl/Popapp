@@ -91,6 +91,9 @@
                                         <constraint firstItem="UUp-f5-Aci" firstAttribute="leading" secondItem="Zgv-Sb-jR8" secondAttribute="leading" constant="20" id="mqZ-h1-alj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="VZF-I6-STQ" kind="show" id="AWk-NA-PGK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -102,6 +105,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMl-4w-4go" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1679.7101449275362" y="806.25000000000011"/>
+        </scene>
+        <!--Detail Site View Controller-->
+        <scene sceneID="pfA-9g-6AS">
+            <objects>
+                <viewController id="VZF-I6-STQ" customClass="DetailSiteViewController" customModule="PopApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ch-0Z-tEu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlu-fU-2kB">
+                                <rect key="frame" x="59" y="82" width="301" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VU-m7-ee1">
+                                <rect key="frame" x="87" y="309" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qMs-WK-sZ7"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionSite" destination="5VU-m7-ee1" id="U1A-cf-hz9"/>
+                        <outlet property="siteImagen" destination="dlu-fU-2kB" id="jxS-Xm-DTv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkA-04-Fgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2540.579710144928" y="816.84782608695662"/>
         </scene>
         <!--Detect Barcode-->
         <scene sceneID="vbE-I9-QAB">

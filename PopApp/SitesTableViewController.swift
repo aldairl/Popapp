@@ -48,6 +48,13 @@ class SitesTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectedItem = tableView.indexPathForSelectedRow,
+            let destineSite = segue.destination as? DetailSiteViewController{
+            destineSite.descriptionsit = category[selectedItem.row].gettitle()
+            destineSite.img = category[selectedItem.row].getimg()
+        }
+    }
     
 
     /*
