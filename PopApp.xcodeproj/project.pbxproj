@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		962E436E222B9CAC00872A7B /* BooksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E436D222B9CAC00872A7B /* BooksManager.swift */; };
+		9648C711222DFFCC0096C5CD /* SitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648C710222DFFCC0096C5CD /* SitesTableViewController.swift */; };
 		96F62B8D222B8F1700F3CA74 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F62B8C222B8F1700F3CA74 /* BooksTableViewController.swift */; };
 		96F62B8F222B941000F3CA74 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F62B8E222B941000F3CA74 /* Book.swift */; };
 		A0C39373221C1B6400655C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C39372221C1B6400655C2E /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		962E436D222B9CAC00872A7B /* BooksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager.swift; sourceTree = "<group>"; };
+		9648C710222DFFCC0096C5CD /* SitesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesTableViewController.swift; sourceTree = "<group>"; };
 		96F62B8C222B8F1700F3CA74 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 		96F62B8E222B941000F3CA74 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A0C3936F221C1B6400655C2E /* PopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				96F62B8E222B941000F3CA74 /* Book.swift */,
 				962E436D222B9CAC00872A7B /* BooksManager.swift */,
 				96F62B8C222B8F1700F3CA74 /* BooksTableViewController.swift */,
+				9648C710222DFFCC0096C5CD /* SitesTableViewController.swift */,
 				A0C39379221C1B6700655C2E /* Assets.xcassets */,
 				A0C3937B221C1B6700655C2E /* LaunchScreen.storyboard */,
 				A0C3937E221C1B6700655C2E /* Info.plist */,
@@ -152,6 +155,7 @@
 				962E436E222B9CAC00872A7B /* BooksManager.swift in Sources */,
 				A0C39373221C1B6400655C2E /* AppDelegate.swift in Sources */,
 				96F62B8D222B8F1700F3CA74 /* BooksTableViewController.swift in Sources */,
+				9648C711222DFFCC0096C5CD /* SitesTableViewController.swift in Sources */,
 				C34B4262222C894200E0B299 /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

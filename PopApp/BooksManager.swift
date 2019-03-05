@@ -2,7 +2,9 @@ import Foundation
 import UIKit
 
 class BooksManager {
-    private lazy var books:[Book] = self.loadBooks()
+    
+    private lazy var books:[Book] = self.loadBooks(lista: 1)
+    
     var bookCount:Int {return books.count}
     
     var OtroCover: [UIImage] = [UIImage(named: "astro.png")!, UIImage(named: "palet.png")! ]
@@ -10,7 +12,16 @@ class BooksManager {
     func getBook(at index:Int)->Book {
         return books[index] }
     
-    private func loadBooks()->[Book] { return sampleBooks()
+    func loadBooks(lista: Int)->[Book] {
+        if (lista == 0){
+            return sampleBooks()
+        }
+        
+        if (lista == 1){
+            return parques()
+        }
+        
+        return sampleBooks()
     }
     
     func addBook(_ book:Book) {
@@ -22,6 +33,15 @@ class BooksManager {
         Book(title: "Sitios Historicos"),
         Book(title: "Museos")
         ] }
+    
+    private func parques()->[Book] { return [
+        Book(title: "Parque1", cover: OtroCover[0]),
+        Book(title: "parque2", cover: OtroCover[1]),
+        Book(title: "parque3"),
+        Book(title: "parque4")
+        ] }
+    
+    
 }
 
 //More books
