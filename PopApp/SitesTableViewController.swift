@@ -1,17 +1,16 @@
 //
-//  BooksTableViewController.swift
+//  SitesTableViewController.swift
 //  PopApp
 //
-//  Created by thinking on 3/2/19.
+//  Created by thinking on 3/4/19.
 //  Copyright © 2019 Aldair Luna. All rights reserved.
 //
 
 import UIKit
 
-class BooksTableViewController: UITableViewController {
-    
-    var sitesManager: BooksManager = BooksManager()
-    var parques:[Book] = BooksManager().loadBooks(lista: 0)
+class SitesTableViewController: UITableViewController {
+    var subsitesManager: BooksManager = BooksManager()
+    var category:[Book] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,32 +31,30 @@ class BooksTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return parques.count
+        return category.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "siteCell", for: indexPath)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookCell", for: indexPath)
-        let site = parques[indexPath.row]
+        let site = category[indexPath.row]
         
         // Configure the cell...
         cell.textLabel?.text = site.title
         cell.imageView?.image = site.cover
 
+
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let selectedIndexPath = tableView.indexPathForSelectedRow,
-        let deslist = segue.destination as? SitesTableViewController {
-        //Editing
-        deslist.category = BooksManager().loadBooks(lista: selectedIndexPath.row + 1)
+        if let selectedItem = tableView.indexPathForSelectedRow,
+            let destineSite = segue.destination as? DetailSiteViewController{
+            destineSite.descriptionsit = category[selectedItem.row].gettitle()
+            destineSite.img = category[selectedItem.row].getimg()
+        }
     }
-        
-    }
-    
-    
     
 
     /*
