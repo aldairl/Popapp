@@ -23,6 +23,10 @@ class BooksTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @IBAction func home(_ sender: UIBarButtonItem) {
+         dismiss(animated: true, completion: nil)
+        
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
