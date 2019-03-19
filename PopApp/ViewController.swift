@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,13 @@ class ViewController: UIViewController {
         navigationController.topViewController as? BarcodeViewController {
         barcodeViewController.delegate = self }
     }
+    
+
+    
+    
+    
+    
+    
     
 }
 
