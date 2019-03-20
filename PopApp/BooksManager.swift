@@ -3,7 +3,7 @@ import UIKit
 
 class BooksManager {
     
-    private lazy var books:[Book] = self.loadBooks(lista: 1)
+    private lazy var books:[Book] = self.loadBooks(lista: 0)
     
     var bookCount:Int {return books.count}
     
@@ -39,9 +39,9 @@ class BooksManager {
         ] }
     
     private func parques()->[Book] { return [
-        Book(title: "Parque1", cover: OtroCover[0]),
-        Book(title: "parque2", cover: OtroCover[1]),
-        Book(title: "parque3"),
+        Book(title: "Casa museo Guillermo León Valencia", cover: OtroCover[0]),
+        Book(title: "Panteón de los Próceres", cover: OtroCover[1]),
+        Book(title: "Museo casa Mosquera"),
         Book(title: "parque4")
         ] }
     

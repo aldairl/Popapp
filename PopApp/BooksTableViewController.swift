@@ -11,11 +11,12 @@ import UIKit
 class BooksTableViewController: UITableViewController {
     
     var sitesManager: BooksManager = BooksManager()
-    var parques:[Book] = BooksManager().loadBooks(lista: 0)
+    //var parques:[Book] = BooksManager().loadBooks(lista: 0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("metodo view did load")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,14 +37,15 @@ class BooksTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return parques.count
+        //print("numero de parques",parques.count)
+        return sitesManager.bookCount
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "bookCell", for: indexPath)
-        let site = parques[indexPath.row]
+        let site = sitesManager.getBook(at: indexPath.item)
         
         // Configure the cell...
         cell.textLabel?.text = site.title
