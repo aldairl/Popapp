@@ -39,7 +39,6 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     @IBAction func verMas(_ sender: UIButton) {
         let comparar:String = descriptionSite.text!
         infoSitio(titulo: comparar)
-        //cargarImagen(thumbnailURL: urlImagen)
     }
     
     
@@ -60,10 +59,8 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                     let cadena = item["NAME"]
                     let imagenLink = item["IMAGE"]
                     if (cadena!.elementsEqual(titulo) == true){
-                      //  let sitio = Book(title: titulo)
                         self.detalleSite.text! = item["DESCRIPTION"]!
                         self.cargarImagen(thumbnailURL: imagenLink!)
-                      //  self.cargarImagen(sitio: sitio, thumbnailURL: imagenLink!)
                     }
                 else{
                     print("No se encontrò la lista de sitios")
@@ -75,24 +72,12 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     }.resume()
     }
 
-   // func cargarImagen(sitio:Book, thumbnailURL:String) -> Void{
-  //  var sitio = sitio
-   // guard let url = URL(string: thumbnailURL) else {return}
-    //let task = session.downloadTask(with: url) { (tempURL, response, error) in
-     //   if let tempURL = tempURL, let data = try? Data(contentsOf: tempURL),
-      //      let image = UIImage(data: data) {
-       //     sitio.cover = image
-        //    print("Soy la imagen")
-       // }
-   // }
-   // task.resume()
-//}
     func cargarImagen(thumbnailURL:String) {
         guard let url = URL(string: thumbnailURL) else {return}
         let task = session.downloadTask(with: url) { (tempURL, response, error) in
             if let tempURL = tempURL, let data = try? Data(contentsOf: tempURL),
                 let image = UIImage(data: data) {
-                self.img = image
+                self.siteImagen.image = image
                 print("Soy la imagen")
             }
         }
