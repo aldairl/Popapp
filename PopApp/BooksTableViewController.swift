@@ -38,6 +38,7 @@ class BooksTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //print("numero de parques",parques.count)
+       // return sitesManager.bookCount
         return sitesManager.bookCount
     }
 

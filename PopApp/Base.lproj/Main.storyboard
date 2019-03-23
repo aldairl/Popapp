@@ -159,6 +159,7 @@
                     <connections>
                         <outlet property="descriptionSite" destination="5VU-m7-ee1" id="U1A-cf-hz9"/>
                         <outlet property="detalleSite" destination="Vm1-J5-q9m" id="Vnx-L8-XTA"/>
+                        <outlet property="imgServer" destination="dlu-fU-2kB" id="oGt-5h-1jh"/>
                         <outlet property="siteImagen" destination="dlu-fU-2kB" id="jxS-Xm-DTv"/>
                     </connections>
                 </viewController>
@@ -243,7 +244,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewp-i4-PiM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewp-i4-PiM">
                                 <rect key="frame" x="100" y="295" width="214" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Mis Favoritos"/>
@@ -256,8 +257,8 @@
                                     <segue destination="iHm-MS-8gL" kind="show" id="bfh-k2-Why"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="astro" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-je-srJ">
-                                <rect key="frame" x="53" y="350" width="308" height="366"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astro" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-je-srJ">
+                                <rect key="frame" x="53" y="414" width="308" height="302"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -297,7 +298,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QP0-NO-tI0" secondAttribute="trailing" constant="326" id="VMe-6E-eZx"/>
                             <constraint firstItem="ejs-je-srJ" firstAttribute="leading" secondItem="J9M-rx-M5m" secondAttribute="trailing" constant="8" symbolic="YES" id="VtO-UP-MA3"/>
                             <constraint firstItem="Wlg-Ls-5l2" firstAttribute="top" secondItem="FYe-1Y-pJP" secondAttribute="bottom" constant="8" symbolic="YES" id="Wbr-zw-mc1"/>
-                            <constraint firstItem="ejs-je-srJ" firstAttribute="top" secondItem="ewp-i4-PiM" secondAttribute="bottom" constant="20" id="ZSn-3t-Xva"/>
                             <constraint firstAttribute="bottom" secondItem="ejs-je-srJ" secondAttribute="bottom" constant="20" symbolic="YES" id="e2a-s3-cvh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ewp-i4-PiM" secondAttribute="trailing" constant="100" id="eJq-iG-sty"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FYe-1Y-pJP" secondAttribute="trailing" constant="323" id="fbv-Lq-SQl"/>
@@ -311,6 +311,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wlg-Ls-5l2" secondAttribute="trailing" constant="100" id="m6F-fu-KFS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J9M-rx-M5m" secondAttribute="trailing" constant="320" id="mK0-r3-ya5"/>
                             <constraint firstItem="J9M-rx-M5m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="meR-ez-65z"/>
+                            <constraint firstItem="ejs-je-srJ" firstAttribute="top" secondItem="QP0-NO-tI0" secondAttribute="bottom" constant="290" id="p3P-a7-ulv"/>
                             <constraint firstItem="FYe-1Y-pJP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pc9-Mc-v40"/>
                             <constraint firstItem="J9M-rx-M5m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="pzH-YG-2Cd"/>
                             <constraint firstItem="QP0-NO-tI0" firstAttribute="top" secondItem="J9M-rx-M5m" secondAttribute="bottom" constant="8" symbolic="YES" id="qEo-fz-1B8"/>
@@ -340,10 +341,6 @@
                                 <exclude reference="UNs-HZ-227"/>
                                 <exclude reference="JjE-h3-Qdy"/>
                                 <exclude reference="qEo-fz-1B8"/>
-                                <exclude reference="Cxy-R3-tO5"/>
-                                <exclude reference="RcQ-gC-EKG"/>
-                                <exclude reference="sDn-sQ-Icm"/>
-                                <exclude reference="HFu-Kw-YC4"/>
                                 <exclude reference="03Z-J4-aSQ"/>
                                 <exclude reference="Mfs-vo-vsK"/>
                                 <exclude reference="OqH-cE-AoB"/>
@@ -351,6 +348,10 @@
                                 <exclude reference="e2a-s3-cvh"/>
                                 <exclude reference="gFZ-OV-nst"/>
                                 <exclude reference="ybB-EB-erV"/>
+                                <exclude reference="Cxy-R3-tO5"/>
+                                <exclude reference="RcQ-gC-EKG"/>
+                                <exclude reference="sDn-sQ-Icm"/>
+                                <exclude reference="HFu-Kw-YC4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -378,6 +379,14 @@
                                 <include reference="qEo-fz-1B8"/>
                                 <exclude reference="wAp-sx-A7H"/>
                                 <exclude reference="zzZ-60-NOs"/>
+                                <exclude reference="03Z-J4-aSQ"/>
+                                <exclude reference="HRC-vq-gUb"/>
+                                <exclude reference="Mfs-vo-vsK"/>
+                                <include reference="OqH-cE-AoB"/>
+                                <exclude reference="VtO-UP-MA3"/>
+                                <exclude reference="e2a-s3-cvh"/>
+                                <include reference="gFZ-OV-nst"/>
+                                <exclude reference="ybB-EB-erV"/>
                                 <exclude reference="6M1-OG-h0K"/>
                                 <exclude reference="Cxy-R3-tO5"/>
                                 <include reference="RcQ-gC-EKG"/>
@@ -388,15 +397,6 @@
                                 <exclude reference="EGa-sj-DDe"/>
                                 <include reference="HFu-Kw-YC4"/>
                                 <exclude reference="hM1-Xq-UnP"/>
-                                <exclude reference="03Z-J4-aSQ"/>
-                                <exclude reference="HRC-vq-gUb"/>
-                                <exclude reference="Mfs-vo-vsK"/>
-                                <include reference="OqH-cE-AoB"/>
-                                <exclude reference="VtO-UP-MA3"/>
-                                <exclude reference="ZSn-3t-Xva"/>
-                                <exclude reference="e2a-s3-cvh"/>
-                                <include reference="gFZ-OV-nst"/>
-                                <exclude reference="ybB-EB-erV"/>
                             </mask>
                         </variation>
                     </view>
