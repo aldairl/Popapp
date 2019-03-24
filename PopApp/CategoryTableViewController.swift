@@ -8,9 +8,9 @@
 
 import UIKit
 
-class BooksTableViewController: UITableViewController {
+class CategoryTableViewController: UITableViewController {
     
-    var sitesManager: BooksManager = BooksManager()
+    var sitesManager: SitesManager = SitesManager()
     //var parques:[Book] = BooksManager().loadBooks(lista: 0)
 
     override func viewDidLoad() {
@@ -39,14 +39,15 @@ class BooksTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         //print("numero de parques",parques.count)
        // return sitesManager.bookCount
-        return sitesManager.bookCount
+        return sitesManager.SiteCount
+        
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookCell", for: indexPath)
-        let site = sitesManager.getBook(at: indexPath.item)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SiteCell", for: indexPath)
+        let site = sitesManager.getSite(at: indexPath.item)
         
         // Configure the cell...
         cell.textLabel?.text = site.title
@@ -59,7 +60,7 @@ class BooksTableViewController: UITableViewController {
         if let selectedIndexPath = tableView.indexPathForSelectedRow,
         let deslist = segue.destination as? SitesTableViewController {
         //Editing
-        deslist.category = BooksManager().loadBooks(lista: selectedIndexPath.row + 1)
+        deslist.category = SitesManager().loadSites(lista: selectedIndexPath.row + 1)
     }
         
     }
