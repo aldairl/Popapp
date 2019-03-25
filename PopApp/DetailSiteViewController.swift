@@ -19,7 +19,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     var descriptionsit = String()
     var img = UIImage()
     
-    let urlServidor = "http://10.0.2.15:8080/lugareserver-2.json"
+    let urlServidor = "https://raw.githubusercontent.com/aldairl/Popapp/master/lugareserver-2.json"
     lazy var session:URLSession = {
         return URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: OperationQueue.main)
     }()
