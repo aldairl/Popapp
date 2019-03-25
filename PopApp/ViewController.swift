@@ -12,17 +12,18 @@ class ViewController: UIViewController {
     
     
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let navigationController = segue.destination as? UINavigationController,
-        let barcodeViewController =
-        navigationController.topViewController as? BarcodeViewController {
-        barcodeViewController.delegate = self }
-    }
+  //  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //    if let navigationController = segue.destination as? UINavigationController,
+      //  let barcodeViewController =
+       // navigationController.topViewController as? BarcodeViewController {
+       // barcodeViewController.delegate = self }
+    //}
     
 
     
@@ -33,8 +34,8 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController:BarcodeViewControllerDelegate {
-    func foundBarcode(barcode:String) {
-    
-    }
-}
+//extension ViewController:BarcodeViewControllerDelegate {
+  //  func foundBarcode(barcode:String) {
+
+//    }
+//}

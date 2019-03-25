@@ -84,6 +84,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
         task.resume()
     }
     
+    
     /*
     // MARK: - Navigation
 
@@ -92,6 +93,20 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationController = segue.destination as? UINavigationController,
+            let barcodeViewController = navigationController.topViewController as? BarcodeViewController {
+            barcodeViewController.delegate = self
+        }
+    }*/
 
 }
+
+extension DetailSiteViewController: BarcodeViewControllerDelegate {
+    func foundBarcode(barcode:String) {
+        
+        
+    }
+}
+

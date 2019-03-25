@@ -34,11 +34,12 @@ class BarcodeViewController: UIViewController {
         }
         
         //add video camera input to capture session
-        if (captureSession.canAddInput(videoInput)) { captureSession.addInput(videoInput)
-        } else {
+        if (captureSession.canAddInput(videoInput)) {
+            captureSession.addInput(videoInput)}
+        else {
             failed();return}
         
-        //Bar code detector
+        //Barcode detector
         let metadataOutput = AVCaptureMetadataOutput()
         if (captureSession.canAddOutput(metadataOutput)) {
             captureSession.addOutput(metadataOutput) } else {failed();return}
@@ -57,7 +58,6 @@ class BarcodeViewController: UIViewController {
     }
     
     @IBAction func touchCancel(_ sender: Any) {
-        
         dismiss(animated: true, completion: nil)
     }
     
@@ -81,7 +81,12 @@ class BarcodeViewController: UIViewController {
     }
     
     
-
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationController = segue.destination as? UINavigationController,
+            let barcodeViewController = navigationController.topViewController as? DetailSiteViewController {
+            barcodeViewController.delegate = self }
+        }
+ */
     /*
     // MARK: - Navigation
 
@@ -93,6 +98,7 @@ class BarcodeViewController: UIViewController {
     */
 
 }
+
 
 protocol BarcodeViewControllerDelegate {
     func foundBarcode(barcode:String)
