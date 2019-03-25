@@ -20,6 +20,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     var descriptionsit = String()
     var img = UIImage()
     
+    
     var delegate: SiteViewControllerDelegate?
     
     let urlServidor = "https://raw.githubusercontent.com/aldairl/Popapp/master/lugareserver-2.json"
@@ -46,9 +47,12 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     }
     
     @IBAction func addFavorite(_ sender: UIButton) {
-        let siteToSave = Site(title: titleSite.text!, des: detalleSite.text!)
+        let siteToSave = Site(title: titleSite.text!,
+                              des: detalleSite.text!
+        )
+        
         delegate?.saveSite(siteToSave)
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
     }
     
     func infoSitio(titulo: String){
@@ -70,6 +74,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                     if (cadena!.elementsEqual(titulo) == true){
                         self.detalleSite.text! = item["DESCRIPTION"]!
                         self.cargarImagen(thumbnailURL: imagenLink!)
+                        print("sitio encontrado")
                     }
                 else{
                     print("No se encontrò la lista de sitios")

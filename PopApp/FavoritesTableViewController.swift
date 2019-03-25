@@ -55,11 +55,10 @@ class FavoritesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let selectedItem = tableView.indexPathForSelectedRow,
             let detailSite = segue.destination as? DetailSiteViewController{
-            detailSite.delegate = self
+            
             let site = sitesManager.getSite(at: selectedItem.item)
             //let site2 = sitesManager.loadSites(position: 1)
             //let site = site2[selectedItem.item]
-            
             detailSite.titleS = site.title
             detailSite.descriptionsit = site.desSite
             detailSite.img = site.cover
@@ -75,17 +74,16 @@ class FavoritesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            sitesManager.removeSite(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -112,11 +110,4 @@ class FavoritesTableViewController: UITableViewController {
     }
     */
 
-}
-
-extension FavoritesTableViewController: SiteViewControllerDelegate{
-    func saveSite(_ site: Site) {
-        sitesManager.addSite(site)
-        //tableView.reloadData()
-    }
 }

@@ -106,7 +106,14 @@ class SitesManager {
     func addSite(_ site:Site) {
         var siteg = site
         SQLAddSite(site: &siteg)
-        sites.append(site) }
+        //sites.append(site)
+        
+    }
+    
+    func removeSite(at index:Int){
+        let siteToRemove = sites.remove(at: index)
+        SQLRemoveBook(site: siteToRemove)
+    }
     
     //-------------SQL--------
     
@@ -140,8 +147,22 @@ class SitesManager {
         
         do{
             try db.executeUpdate("insert into site (title, desSite, cover) values (?, ?, ?)", values: [site.title, site.desSite, site.cover])
+            site.id = Int(db.lastInsertRowId)
         }catch{
             
+            print("failed: \(error.localizedDescription)")
+        }
+        db.close() }
+    
+    
+    func SQLRemoveBook(site: Site) {
+        guard let db = getOpenDB() else { return  }
+        do {
+            try db.executeUpdate(
+                "delete from site where title = ?",
+                values: [site.title]
+            )
+        } catch {
             print("failed: \(error.localizedDescription)")
         }
         db.close() }

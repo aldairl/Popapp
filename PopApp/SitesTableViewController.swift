@@ -108,6 +108,6 @@ class SitesTableViewController: UITableViewController {
 extension SitesTableViewController: SiteViewControllerDelegate{
     func saveSite(_ site: Site) {
         subsitesManager.addSite(site)
-        tableView.reloadData()
+        //tableView.reloadData()
     }
 }
