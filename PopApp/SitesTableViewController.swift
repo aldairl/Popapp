@@ -9,8 +9,8 @@
 import UIKit
 
 class SitesTableViewController: UITableViewController {
-    var subsitesManager: BooksManager = BooksManager()
-    var category:[Book] = []
+    var subsitesManager: SitesManager = SitesManager()
+    var category:[Site] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

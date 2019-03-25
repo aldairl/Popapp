@@ -1,11 +1,11 @@
 import UIKit
 
-struct Book {
-    static let defaultCover = UIImage(named: "book.jpg")!
+struct Site {
+    static let defaultCover = UIImage(named: "Site.jpg")!
     var title:String
     var cover:UIImage {
         get {
-            return image ?? Book.defaultCover
+            return image ?? Site.defaultCover
         } set {
             image = newValue }
     }
@@ -25,7 +25,7 @@ struct Book {
         if image != nil{
             return image!
         }else{
-            return image ?? Book.defaultCover
+            return image ?? Site.defaultCover
         }
         
     }
