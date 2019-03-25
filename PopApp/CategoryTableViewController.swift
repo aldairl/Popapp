@@ -11,7 +11,6 @@ import UIKit
 class CategoryTableViewController: UITableViewController {
     
     var sitesManager: SitesManager = SitesManager()
-    //var parques:[Book] = BooksManager().loadBooks(lista: 0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +38,8 @@ class CategoryTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         //print("numero de parques",parques.count)
        // return sitesManager.bookCount
-        return sitesManager.SiteCount
+        let categoria = sitesManager.loadSites(lista: 0)
+        return categoria.count
         
     }
 
@@ -47,11 +47,11 @@ class CategoryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "SiteCell", for: indexPath)
-        let site = sitesManager.getSite(at: indexPath.item)
-        
+        //let site = sitesManager.getSite(at: indexPath.item)
+        let categoria = sitesManager.loadSites(lista: 0)
         // Configure the cell...
-        cell.textLabel?.text = site.title
-        cell.imageView?.image = site.cover
+        cell.textLabel?.text = categoria[indexPath.item].title
+        cell.imageView?.image = categoria[indexPath.item].cover
 
         return cell
     }

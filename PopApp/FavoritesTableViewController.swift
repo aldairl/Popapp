@@ -1,16 +1,16 @@
 //
-//  SitesTableViewController.swift
+//  FavoritesTableViewController.swift
 //  PopApp
 //
-//  Created by thinking on 3/4/19.
+//  Created by thinking on 3/24/19.
 //  Copyright © 2019 Aldair Luna. All rights reserved.
 //
 
 import UIKit
 
-class SitesTableViewController: UITableViewController {
-    var subsitesManager: SitesManager = SitesManager()
-    var category:[Site] = []
+class FavoritesTableViewController: UITableViewController {
+    
+    var sitesManager:SitesManager = SitesManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,36 +24,44 @@ class SitesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    @IBAction func home(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return category.count
+        return sitesManager.siteCount
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "siteCell", for: indexPath)
-        
-        let site = category[indexPath.row]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath)
+
         // Configure the cell...
+
+        //let site = sitesManager.loadSites(position: 1)
+        let site = sitesManager.getSite(at: indexPath.row)
+        //cell.textLabel?.text = site[indexPath.row].title
         cell.textLabel?.text = site.title
         cell.imageView?.image = site.cover
-
-
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let selectedItem = tableView.indexPathForSelectedRow,
-            let destineSite = segue.destination as? DetailSiteViewController{
-            destineSite.delegate = self
-            destineSite.titleS = category[selectedItem.row].title
-            destineSite.img = category[selectedItem.row].getimg()
+            let detailSite = segue.destination as? DetailSiteViewController{
+            
+            let site = sitesManager.getSite(at: selectedItem.item)
+            //let site2 = sitesManager.loadSites(position: 1)
+            //let site = site2[selectedItem.item]
+            detailSite.titleS = site.title
+            detailSite.descriptionsit = site.desSite
+            detailSite.img = site.cover
         }
     }
     
@@ -66,17 +74,16 @@ class SitesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            sitesManager.removeSite(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -103,11 +110,4 @@ class SitesTableViewController: UITableViewController {
     }
     */
 
-}
-
-extension SitesTableViewController: SiteViewControllerDelegate{
-    func saveSite(_ site: Site) {
-        subsitesManager.addSite(site)
-        //tableView.reloadData()
-    }
 }

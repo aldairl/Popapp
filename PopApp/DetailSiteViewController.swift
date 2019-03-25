@@ -12,14 +12,19 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
 
     @IBOutlet weak var detalleSite: UILabel!
     @IBOutlet weak var siteImagen: UIImageView!
-    @IBOutlet weak var descriptionSite: UILabel!
+    @IBOutlet weak var titleSite: UILabel!
     
     @IBOutlet weak var imgServer: UIImageView!
     
+    var titleS = String()
     var descriptionsit = String()
     var img = UIImage()
     
-    let urlServidor = "http://10.0.2.15:8080/lugareserver-2.json"
+    
+    var delegate: SiteViewControllerDelegate?
+    
+    let urlServidor = "https://raw.githubusercontent.com/aldairl/Popapp/master/lugareserver-2.json"
+    
     lazy var session:URLSession = {
         return URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: OperationQueue.main)
     }()
@@ -28,8 +33,8 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        descriptionSite.text = descriptionsit
-        
+        detalleSite.text = descriptionsit
+        titleSite.text = titleS
         siteImagen.image = img
 
         // Do any additional setup after loading the view.
@@ -37,10 +42,18 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     
     
     @IBAction func verMas(_ sender: UIButton) {
-        let comparar:String = descriptionSite.text!
+        let comparar:String = titleSite.text!
         infoSitio(titulo: comparar)
     }
     
+    @IBAction func addFavorite(_ sender: UIButton) {
+        let siteToSave = Site(title: titleSite.text!,
+                              des: detalleSite.text!
+        )
+        
+        delegate?.saveSite(siteToSave)
+        //dismiss(animated: true, completion: nil)
+    }
     
     func infoSitio(titulo: String){
         let url:URL = URL(string: urlServidor)!
@@ -61,6 +74,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                     if (cadena!.elementsEqual(titulo) == true){
                         self.detalleSite.text! = item["DESCRIPTION"]!
                         self.cargarImagen(thumbnailURL: imagenLink!)
+                        print("sitio encontrado")
                     }
                 else{
                     print("No se encontrò la lista de sitios")
@@ -102,6 +116,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     }*/
 
 }
+<<<<<<< HEAD
 
 extension DetailSiteViewController: BarcodeViewControllerDelegate {
     func foundBarcode(barcode:String) {
@@ -110,3 +125,8 @@ extension DetailSiteViewController: BarcodeViewControllerDelegate {
     }
 }
 
+=======
+protocol SiteViewControllerDelegate {
+    func saveSite(_ site: Site)
+}
+>>>>>>> master
