@@ -1,20 +1,21 @@
 //
-//  SitesTableViewController.swift
+//  BooksTableViewController.swift
 //  PopApp
 //
-//  Created by thinking on 3/4/19.
+//  Created by thinking on 3/2/19.
 //  Copyright © 2019 Aldair Luna. All rights reserved.
 //
 
 import UIKit
 
-class SitesTableViewController: UITableViewController {
-    var subsitesManager: SitesManager = SitesManager()
-    var category:[Site] = []
+class CategoryTableViewController: UITableViewController {
+    
+    var sitesManager: SitesManager = SitesManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("metodo view did load")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,6 +23,10 @@ class SitesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @IBAction func home(_ sender: UIBarButtonItem) {
+         dismiss(animated: true, completion: nil)
+        
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,31 +36,36 @@ class SitesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return category.count
+        //print("numero de parques",parques.count)
+       // return sitesManager.bookCount
+        let categoria = sitesManager.loadSites(lista: 0)
+        return categoria.count
+        
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "siteCell", for: indexPath)
         
-        let site = category[indexPath.row]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SiteCell", for: indexPath)
+        //let site = sitesManager.getSite(at: indexPath.item)
+        let categoria = sitesManager.loadSites(lista: 0)
         // Configure the cell...
-        cell.textLabel?.text = site.title
-        cell.imageView?.image = site.cover
-
+        cell.textLabel?.text = categoria[indexPath.item].title
+        cell.imageView?.image = categoria[indexPath.item].cover
 
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let selectedItem = tableView.indexPathForSelectedRow,
-            let destineSite = segue.destination as? DetailSiteViewController{
-            destineSite.delegate = self
-            destineSite.titleS = category[selectedItem.row].title
-            destineSite.img = category[selectedItem.row].getimg()
-        }
+        if let selectedIndexPath = tableView.indexPathForSelectedRow,
+        let deslist = segue.destination as? SitesTableViewController {
+        //Editing
+        deslist.category = SitesManager().loadSites(lista: selectedIndexPath.row + 1)
     }
+        
+    }
+    
+    
     
 
     /*
@@ -103,11 +113,4 @@ class SitesTableViewController: UITableViewController {
     }
     */
 
-}
-
-extension SitesTableViewController: SiteViewControllerDelegate{
-    func saveSite(_ site: Site) {
-        subsitesManager.addSite(site)
-        tableView.reloadData()
-    }
 }

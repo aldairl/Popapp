@@ -1,0 +1,137 @@
+{
+  "LUGARES": [
+              {
+                "ID":"museo",
+                "NAME": "Casa museo Guillermo León Valencia",
+                "IMAGE": "http://www.museoscolombianos.gov.co/museos-del-ministerio-de-cultura/museo-guillermo-leon-valencia/Galera%20Guillermo%20Len%20Valencia/Fachada%202%20(Casa%20Museo%20Guillermo%20Leon%20Valencia%20Popayan).jpg",
+                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "DESCRIPTION":"La Casa Museo Guillermo León Valencia, es el resultado del esfuerzo de la Fundación Guillermo León Valencia, el Ministerio de Cultura y el Museo Nacional de Colombia, con el fin de mantener vigente el legado del Ex – Presidente Valencia y de abrir nuevos espacios para la cultura y las artes en la ciudad de Popayán, que beneficien a la comunidad en general y que ofrezca a propios y extraños la posibilidad de conocer de cerca la historia de nuestros dirigentes"
+              },
+              {
+                "ID":"museo",
+                "NAME": "Panteón de los Próceres",
+                "IMAGE": "http://portal.unicauca.edu.co/versionP/imagebrowser/view/image/4065/_original",
+                "LOCATION": "geo:0,0?z=4&q=2.4428701,-76.6085504",
+                "DESCRIPTION":"El Panteón de los Próceres de Popayán es el edificio destinado a \"guardar las cenizas de los payaneses que ayudaron a fundar la República: de los que ejercieron la Suprema Magistratura de la Nación; de los que ejecutaron o ejecuten grandes hazañas en servicio de Colombia y alcanzaron o alcancen la suprema eminencia en el país en cualquier campo\", según lo determina el Acuerdo Nº 40 del 15 de octubre  de 1940, expedido por el Consejo Directivo de la Universidad del Cauca, propietaria del monumento nacional."
+              },
+              {
+                "ID":"museo",
+                "NAME": "Museo casa Mosquera",
+                "IMAGE": "http://www.unicauca.edu.co/versionP/sites/default/files/images/Casa_Mueso_Mosquera1.jpg",
+                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "DESCRIPTION":"La Casa Mosquera es un Museo de la Universidad del Cauca encargado de la protección, conservación y divulgación de las colecciones del Patrimonio Cultural relacionadas con objetos, utensilios y obras de arte colonial pertenecientes a la familia del General Tomás Cipriano de Mosquera y de personalidades que tuvieron relación con ellos y con los acontecimientos políticos y sociales acaecidos en la Nueva Granada en los siglos XVIII y XIX."
+              },
+              {
+                "ID":"museo",
+                "NAME": "Museo Arquidiocesano de Arte religioso",
+                "IMAGE": "https://media-cdn.tripadvisor.com/media/photo-s/03/d2/f5/a4/modell-eine-privatkapelle.jpg",
+                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "DESCRIPTION":"El Museo Arquidiocesano de Arte Religioso fue creado y reglamentado por los decretos arzobispales 386 del 10 de octubre de 1972 y 026 del 12 de julio de 1977, con el fin de proteger, conservar, catalogar restaurar, exhibir las numerosas obras de propiedad de la Arquidiócesis de Popayán, de las parroquias, iglesias, conventos y en lo posible de particulares."
+              },
+              {
+                "ID":"museo",
+                "NAME": "Museo Casa Negret",
+                "IMAGE": "https://i1.wp.com/www.popayancultural.co/wp-content/uploads/2018/03/interior_museo_negret2.jpg",
+                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "DESCRIPTION":"La Casa Museo Negret, tiene como sede la antigua casona colonial en la que el Maestro Edgar Negret Dueñas vivió su infancia y juventud. La constituyen dos colecciones: la primera, conformada por obras de distintos periodos de su producción, junto con algunos objetos históricos; la segunda, la del denominado \"Museo Iberoamericano de Arte Moderno de Popayán, MIAMP\", constituida por múltiples piezas importantes del arte colombiano e iberoamericano, del periodo comprendido entre 1940 y 1990."
+              },
+              {   
+                "ID":"sitio",
+                "NAME":"Puente del Humilladero",
+                "IMAGE":"http://www.fronteras.com.co/sites/default/files/sitios/Humilladero-1_0.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION":"El Puente del Humilladero, que con sus dos arcos cruza el río Molino, es una construcción de mampostería levantada en 1873 por Fray Serafín Barbetti. Su nombre se deriva del esfuerzo que antes de la existencia del puente debían hacer los pobladores para subir la pendiente con pesadas cargas hasta la plaza mayor de Popayán. La vía era tan inclinada que muchas veces la gente tenía que subir casi de rodillas"
+              },
+              {
+                "ID":"sitio",
+                "NAME":"Morro de Tulcán",
+                "IMAGE":"https://media-cdn.tripadvisor.com/media/photo-s/12/81/9f/29/screenshot-20180401-174430.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "El Morro del Tulcán es el principal sitio arqueológico de Popayán. Este consiste en una pequeña loma no natural en forma de pirámide truncada en el cual se encontraron elementos de la época precolombina, aproximadamente entre los años 500 – 1600 a. C., período que se conoce como de las Sociedades Cacicales Tardías"
+              },
+              {
+                "ID":"sitio",
+                "NAME":"Las tres cruces",
+                "IMAGE":"http://www.fronteras.com.co/sites/default/files/sitios/Humilladero-1_0.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "El cerro de la M tiene esa forma por lo menos desde tres costados, desde el norte, el occidente y el sur. Basta observarlo. Era evidente que la pirámide que se levantaba en su sector occidental, de cara al valle, era parte consubstancial del cerro, y su carácter ritual se reforzaba porque allí, detrás del monumento ritual, enterraban a sus muertos. Existen en el Archivo Central del Cauca varios documentos en los que payaneses ambiciosos y curiosos pedían permiso al cabildo de la ciudad para “guaquear” en inmediaciones del cerro."
+              },
+              {
+                "ID":"sitio",
+                "NAME":"Pueblito Patojo",
+                "IMAGE":"http://www.fronteras.com.co/sites/default/files/sitios/Humilladero-1_0.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION":"El Pueblito Patojo contiene Unas réplicas de la capilla de La Ermita, en cuyo interior está la tumba donde reposan los restos del Quijote y de la Nariz de Popayán como se conoce la Torre del Reloj, con una altura de 5.40 metros, cuatro pequeñas cuadras con 12 locales de una altura de 2.40 metros, cubiertas con teja de barro pisado, para ubicar allí tiendas de artesanías y ventas de lo típico las empanadas y tamales de pipián, champús, birimbí y colaciones."
+              },
+              {   
+                "ID":"sitio",
+                "NAME":"Torre del reloj",
+                "IMAGE":"0x7f060056",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION":"Llamada ‘la nariz de Popayán, la Torre del Reloj se levanta en la esquina suroccidental del Parque Caldas. Fue construida entre 1673 y 1682 y el reloj de un solo puntero fue donado por los sacerdotes de la ciudad en 1737. El terremoto de 1983 le causó daños, pero estos fueron reparados sin necesidad de mover uno solo de los 90.000 ladrillos que forman su estructura."
+              },
+              {
+                "ID":"parques",
+                "NAME":"Parque Caldas",
+                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Cldas.jpg/220px-Cldas.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "El Parque Caldas es la plaza principal de la ciudad de Popayán, Colombia. Se encuentra ubicado en el centro de la Ciudad, lugar donde convergen todos los edificios principales y representativos de la ciudad. Desde el año 2010 Con una inversión de más de 2.300 millones de pesos financiados por FONADE y con el aporte de 550 millones de la Alcaldía de Popayán, se entregaron las obras de ampliación, ornato y embellecimiento del área peatonal del parque."
+              },
+               {
+                "ID":"parques",
+                "NAME":"Parque Caldas",
+                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Cldas.jpg/220px-Cldas.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "El Parque Caldas es la plaza principal de la ciudad de Popayán, Colombia. Se encuentra ubicado en el centro de la Ciudad, lugar donde convergen todos los edificios principales y representativos de la ciudad. Desde el año 2010 Con una inversión de más de 2.300 millones de pesos financiados por FONADE y con el aporte de 550 millones de la Alcaldía de Popayán, se entregaron las obras de ampliación, ornato y embellecimiento del área peatonal del parque."
+              },
+               {
+                "ID":"parques",
+                "NAME":"Parque Carlos Albán",
+                "IMAGE":"http://www.periodicolacampana.com/wp-content/uploads/2017/02/Plaza-Carlos-alb%C3%A1n-1.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "El Parque Carlos Alban ...."
+              },
+              {
+                "ID":"parques",
+                "NAME":"Parque Benito Juarez",
+                "IMAGE":"http://4.bp.blogspot.com/-mZtb71hAYSk/TaMuXz2bbGI/AAAAAAAAABE/Y6SLvudzqQ8/s1600/BENITO.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "El Parque Benito Juarez ...."
+              },
+              {
+                "ID":"parques",
+                "NAME":"Parque Natural Puracé",
+                "IMAGE":"https://storage.googleapis.com/pnn-web/uploads/2013/07/Purac%C3%A9_-_Paisaje_Lago_3-_Foto_Archivo_de_Parques.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "Declarado por la UNESCO como Reserva de la Biosfera en 1979, el Parque Nacional Natural Puracé es una zona volcánica y lo refleja tanto en sus numerosas fuentes azufradas como en su nombre, que en lengua quechua significa “montaña de fuego”. Allí nacen los principales ríos de Colombia: Magdalena, Cauca, Patía y Caquetá y también 30 lagunas tranquilas y claras, ideales para la contemplación. Dentro de su estupendo paisaje se levanta la cadena volcánica de los Coconucos, también conocida como Serranía de los Coconucos, compuesta por 11 volcanes."
+              },
+               {
+                "ID":"iglesias",
+                "NAME":"Iglesia Catedral",
+                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Catedral_de_Popay%C3%A1n-Fachada.jpg/1200px-Catedral_de_Popay%C3%A1n-Fachada.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "La Catedrál Basílica de Popayán, fue reconstruida y está situada en el Centro de la ciudad, junto al Parque Caldas"
+              },
+              {
+                "ID":"iglesias",
+                "NAME":"Iglesia Ermita",
+                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Iglesia_de_la_Ermita-_popayan.JPG/480px-Iglesia_de_la_Ermita-_popayan.JPG",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "La Ermita de Jesús Nazareno es el templo más antiguo de la ciudad de Popayán,2​ ubicada sobre una prominencia en el centro histórico de esta ciudad. Fue el principal templo de la ciudad hasta 1558 cuando el obispo Juan del valle inicio la construcción de la Catedral Basílica de Nuestra Señora de la Asunción de Popayán. Dedicada al primer patrón de la ciudad, el Amo Jesús Nazareno,2​ cuenta con muchas obras de arte de diferentes escuelas artísticas de la época. Fue declarada Monumento Nacional de Colombia por decreto 2248 de 1996."
+              },
+              {
+                "ID":"iglesias",
+                "NAME":"Iglesia San Francisco",
+                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iglesia_San_Francisco_2.JPG/480px-Iglesia_San_Francisco_2.JPG",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "La iglesia de San Francisco de Popayán es uno de los templos más importantes de Colombia por su estilo barroco tardío neogranadino. En su campanario posee una de las campanas más grandes de América denominada Campana de San Antonio, fundida en oro y bronce (Inclusive más grande que la campana de la Catedral de Arequipa). Cuenta con diez altares laterales con hornacinas con imágenes, entre las cuales sobresalen la de San Pedro Alcántara, El Señor de la Coronación, el Cristo de la Vera cruz, El Señor de los Azotes y la imagen de San Francisco de Asís y el Cachorro. Posee un púlpito de estilo plateresco, considerado el mejor de Colombia."
+              },
+              {
+                "ID":"iglesias",
+                "NAME":"Iglesia Santo Domingo",
+                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Iglesia_de_Santo_Domingo-Popayan.jpg/900px-Iglesia_de_Santo_Domingo-Popayan.jpg",
+                "LOCATION":"2.4440115,-76.6072876",
+                "DESCRIPTION": "El primer convento que hubo en la ciudad (1552 fue el de los Dominicos). El templo fue construido de tapia y cubierto de paja. El terremoto dcl 2 de febrero de 1736 lo arruinó, lo mismo que el con-vento. La familia Arboleda se hizo cargo de la construcción, a elevados costos. La reconstrucción la dirigió el maestro santafereño Gregorio Causi, traído por la marquesa de San Miguel de la Vega para la edificación del templo y convento de El Carmen. Al mismo maestro se le confió la reconstrucción de San Agustín derruido también por el terremoto de 1736."
+              }
+            ]
+  }

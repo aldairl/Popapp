@@ -1,17 +1,16 @@
 //
-//  BooksTableViewController.swift
+//  FavoritesTableViewController.swift
 //  PopApp
 //
-//  Created by thinking on 3/2/19.
+//  Created by thinking on 3/24/19.
 //  Copyright © 2019 Aldair Luna. All rights reserved.
 //
 
 import UIKit
 
-class BooksTableViewController: UITableViewController {
+class FavoritesTableViewController: UITableViewController {
     
-    var sitesManager: BooksManager = BooksManager()
-    var parques:[Book] = BooksManager().loadBooks(lista: 0)
+    var sitesManager:SitesManager = SitesManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,45 +22,49 @@ class BooksTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    @IBAction func home(_ sender: UIBarButtonItem) {
-         dismiss(animated: true, completion: nil)
-        
-    }
     // MARK: - Table view data source
 
+    @IBAction func home(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return parques.count
+        return sitesManager.siteCount
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookCell", for: indexPath)
-        let site = parques[indexPath.row]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath)
+
         // Configure the cell...
+
+        //let site = sitesManager.loadSites(position: 1)
+        let site = sitesManager.getSite(at: indexPath.row)
+        //cell.textLabel?.text = site[indexPath.row].title
         cell.textLabel?.text = site.title
         cell.imageView?.image = site.cover
-
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let selectedIndexPath = tableView.indexPathForSelectedRow,
-        let deslist = segue.destination as? SitesTableViewController {
-        //Editing
-        deslist.category = BooksManager().loadBooks(lista: selectedIndexPath.row + 1)
+        if let selectedItem = tableView.indexPathForSelectedRow,
+            let detailSite = segue.destination as? DetailSiteViewController{
+            detailSite.delegate = self
+            let site = sitesManager.getSite(at: selectedItem.item)
+            //let site2 = sitesManager.loadSites(position: 1)
+            //let site = site2[selectedItem.item]
+            
+            detailSite.titleS = site.title
+            detailSite.descriptionsit = site.desSite
+            detailSite.img = site.cover
+        }
     }
-        
-    }
-    
-    
     
 
     /*
@@ -109,4 +112,11 @@ class BooksTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension FavoritesTableViewController: SiteViewControllerDelegate{
+    func saveSite(_ site: Site) {
+        sitesManager.addSite(site)
+        //tableView.reloadData()
+    }
 }
