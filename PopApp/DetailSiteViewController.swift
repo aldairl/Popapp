@@ -105,14 +105,17 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     }
 
     func cargarImagen(thumbnailURL:String) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         guard let url = URL(string: thumbnailURL) else {return}
         let task = session.downloadTask(with: url) { (tempURL, response, error) in
             if let tempURL = tempURL, let data = try? Data(contentsOf: tempURL),
                 let image = UIImage(data: data) {
                 self.siteImagen.image = image
+                
                 print("Soy la imagen")
             }
         }
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
         task.resume()
     }
     
