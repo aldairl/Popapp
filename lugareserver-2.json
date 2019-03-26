@@ -4,7 +4,7 @@
                 "ID":"museo",
                 "NAME": "Casa museo Guillermo León Valencia",
                 "IMAGE": "http://www.museoscolombianos.gov.co/museos-del-ministerio-de-cultura/museo-guillermo-leon-valencia/Galera%20Guillermo%20Len%20Valencia/Fachada%202%20(Casa%20Museo%20Guillermo%20Leon%20Valencia%20Popayan).jpg",
-                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "LOCATION": "0,0?z=4&q=2.4423504,-76.6114701",
                 "DESCRIPTION":"La Casa Museo Guillermo León Valencia, es el resultado del esfuerzo de la Fundación Guillermo León Valencia, el Ministerio de Cultura y el Museo Nacional de Colombia, con el fin de mantener vigente el legado del Ex – Presidente Valencia y de abrir nuevos espacios para la cultura y las artes en la ciudad de Popayán, que beneficien a la comunidad en general y que ofrezca a propios y extraños la posibilidad de conocer de cerca la historia de nuestros dirigentes"
               },
               {
@@ -45,28 +45,28 @@
               {
                 "ID":"sitio",
                 "NAME":"Morro de Tulcán",
-                "IMAGE":"https://media-cdn.tripadvisor.com/media/photo-s/12/81/9f/29/screenshot-20180401-174430.jpg",
+                "IMAGE":"https://www.twoscotsabroad.com/wp-content/uploads/2017/01/El-morro-del-tulcan-Popayan-Colombia.jpg",
                 "LOCATION":"2.4440115,-76.6072876",
                 "DESCRIPTION": "El Morro del Tulcán es el principal sitio arqueológico de Popayán. Este consiste en una pequeña loma no natural en forma de pirámide truncada en el cual se encontraron elementos de la época precolombina, aproximadamente entre los años 500 – 1600 a. C., período que se conoce como de las Sociedades Cacicales Tardías"
               },
               {
                 "ID":"sitio",
                 "NAME":"Las tres cruces",
-                "IMAGE":"http://www.fronteras.com.co/sites/default/files/sitios/Humilladero-1_0.jpg",
+                "IMAGE":"http://www.radiosuperpopayan.com/wp-content/uploads/2018/02/tres-cruces-popayan.jpg",
                 "LOCATION":"2.4440115,-76.6072876",
                 "DESCRIPTION": "El cerro de la M tiene esa forma por lo menos desde tres costados, desde el norte, el occidente y el sur. Basta observarlo. Era evidente que la pirámide que se levantaba en su sector occidental, de cara al valle, era parte consubstancial del cerro, y su carácter ritual se reforzaba porque allí, detrás del monumento ritual, enterraban a sus muertos. Existen en el Archivo Central del Cauca varios documentos en los que payaneses ambiciosos y curiosos pedían permiso al cabildo de la ciudad para “guaquear” en inmediaciones del cerro."
               },
               {
                 "ID":"sitio",
                 "NAME":"Pueblito Patojo",
-                "IMAGE":"http://www.fronteras.com.co/sites/default/files/sitios/Humilladero-1_0.jpg",
+                "IMAGE":"https://i2.wp.com/noticias.calendariodecolombia.com/wp-content/uploads/2017/01/Conozca-el-Pueblito-Patojo-en-el-Cauca.jpg",
                 "LOCATION":"2.4440115,-76.6072876",
                 "DESCRIPTION":"El Pueblito Patojo contiene Unas réplicas de la capilla de La Ermita, en cuyo interior está la tumba donde reposan los restos del Quijote y de la Nariz de Popayán como se conoce la Torre del Reloj, con una altura de 5.40 metros, cuatro pequeñas cuadras con 12 locales de una altura de 2.40 metros, cubiertas con teja de barro pisado, para ubicar allí tiendas de artesanías y ventas de lo típico las empanadas y tamales de pipián, champús, birimbí y colaciones."
               },
               {   
                 "ID":"sitio",
                 "NAME":"Torre del reloj",
-                "IMAGE":"0x7f060056",
+                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/6/6b/Torre_del_Reloj.jpg",
                 "LOCATION":"2.4440115,-76.6072876",
                 "DESCRIPTION":"Llamada ‘la nariz de Popayán, la Torre del Reloj se levanta en la esquina suroccidental del Parque Caldas. Fue construida entre 1673 y 1682 y el reloj de un solo puntero fue donado por los sacerdotes de la ciudad en 1737. El terremoto de 1983 le causó daños, pero estos fueron reparados sin necesidad de mover uno solo de los 90.000 ladrillos que forman su estructura."
               },
@@ -79,17 +79,10 @@
               },
                {
                 "ID":"parques",
-                "NAME":"Parque Caldas",
-                "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Cldas.jpg/220px-Cldas.jpg",
-                "LOCATION":"2.4440115,-76.6072876",
-                "DESCRIPTION": "El Parque Caldas es la plaza principal de la ciudad de Popayán, Colombia. Se encuentra ubicado en el centro de la Ciudad, lugar donde convergen todos los edificios principales y representativos de la ciudad. Desde el año 2010 Con una inversión de más de 2.300 millones de pesos financiados por FONADE y con el aporte de 550 millones de la Alcaldía de Popayán, se entregaron las obras de ampliación, ornato y embellecimiento del área peatonal del parque."
-              },
-               {
-                "ID":"parques",
                 "NAME":"Parque Carlos Albán",
                 "IMAGE":"http://www.periodicolacampana.com/wp-content/uploads/2017/02/Plaza-Carlos-alb%C3%A1n-1.jpg",
                 "LOCATION":"2.4440115,-76.6072876",
-                "DESCRIPTION": "El Parque Carlos Alban ...."
+                "DESCRIPTION": "El Parque Carlos Alban fue rediseñado con el objetivo de abrir espacios en los que la ciudadnia pues participar"
               },
               {
                 "ID":"parques",
