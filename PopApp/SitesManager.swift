@@ -147,7 +147,7 @@ class SitesManager {
         
         do{
             try db.executeUpdate("insert into site (title, desSite, cover) values (?, ?, ?)", values: [site.title, site.desSite, site.cover])
-            site.id = Int(db.lastInsertRowId)
+            
         }catch{
             
             print("failed: \(error.localizedDescription)")
