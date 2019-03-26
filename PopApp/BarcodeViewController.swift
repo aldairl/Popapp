@@ -44,7 +44,7 @@ class BarcodeViewController: UIViewController {
         if (captureSession.canAddOutput(metadataOutput)) {
             captureSession.addOutput(metadataOutput) } else {failed();return}
         // Customize metadata output
-        metadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.ean13]
+        metadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
         
         
         metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
@@ -62,8 +62,8 @@ class BarcodeViewController: UIViewController {
     }
     
     @IBAction func touchBarcode(_ sender: UIButton) {
-        delegate?.foundBarcode(barcode: barcodeTextField.text!)
-        dismiss(animated: true, completion: nil)
+     // delegate?.foundBarcode(barcode: barcodeTextField.text!)
+     // dismiss(animated: true, completion: nil)
     }
     
     
@@ -81,12 +81,13 @@ class BarcodeViewController: UIViewController {
     }
     
     
-   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let navigationController = segue.destination as? UINavigationController,
-            let barcodeViewController = navigationController.topViewController as? DetailSiteViewController {
-            barcodeViewController.delegate = self }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let VerDetalle = segue.destination as? DetailSiteViewController {
+          //  VerDetalle.delegateBarcode? = VerDetalle
+            VerDetalle.titleS = barcodeTextField.text!
         }
- */
+    }
+ 
     /*
     // MARK: - Navigation
 

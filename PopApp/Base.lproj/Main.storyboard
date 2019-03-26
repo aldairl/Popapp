@@ -199,6 +199,7 @@
                                 <state key="normal" title="Simular Escaneo"/>
                                 <connections>
                                     <action selector="touchBarcode:" destination="3AH-Jk-nV3" eventType="touchUpInside" id="6YO-uX-R0a"/>
+                                    <segue destination="VZF-I6-STQ" kind="show" id="bYt-kc-FaT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -560,6 +561,6 @@
         <image name="portada" width="512" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AGO-5q-Fvm"/>
+        <segue reference="bYt-kc-FaT"/>
     </inferredMetricsTieBreakers>
 </document>

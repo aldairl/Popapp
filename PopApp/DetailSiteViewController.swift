@@ -22,6 +22,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     
     
     var delegate: SiteViewControllerDelegate?
+    //var delegateBarcode: BarcodeViewControllerDelegate?
     
     let urlServidor = "https://raw.githubusercontent.com/aldairl/Popapp/master/lugareserver-2.json"
     
@@ -116,17 +117,13 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     }*/
 
 }
-<<<<<<< HEAD
 
 extension DetailSiteViewController: BarcodeViewControllerDelegate {
     func foundBarcode(barcode:String) {
-        
-        
-    }
+        titleSite.text = barcode
+        }
 }
 
-=======
 protocol SiteViewControllerDelegate {
     func saveSite(_ site: Site)
 }
->>>>>>> master
