@@ -144,8 +144,11 @@
                                     <action selector="addFavorite:" destination="VZF-I6-STQ" eventType="touchUpInside" id="CAh-rv-ZE4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-IL-hmy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-IL-hmy">
                                 <rect key="frame" x="69" y="95" width="274" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="OLn-TF-kyp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -162,10 +165,11 @@
                         <constraints>
                             <constraint firstItem="Vm1-J5-q9m" firstAttribute="leading" secondItem="qMs-WK-sZ7" secondAttribute="leading" constant="42" id="3cg-cK-CNE"/>
                             <constraint firstItem="qMs-WK-sZ7" firstAttribute="trailing" secondItem="Vm1-J5-q9m" secondAttribute="trailing" constant="71" id="5Qc-Dx-J4l"/>
+                            <constraint firstItem="cxZ-fb-60U" firstAttribute="leading" secondItem="9Tj-51-eKw" secondAttribute="trailing" constant="-9" id="86g-wW-xuL"/>
                             <constraint firstItem="qMs-WK-sZ7" firstAttribute="trailing" secondItem="dlu-fU-2kB" secondAttribute="trailing" constant="42" id="BV0-iu-vlN"/>
                             <constraint firstItem="qMs-WK-sZ7" firstAttribute="trailing" secondItem="0hP-IL-hmy" secondAttribute="trailing" constant="71" id="E5R-OB-1ym"/>
                             <constraint firstItem="cxZ-fb-60U" firstAttribute="top" secondItem="dlu-fU-2kB" secondAttribute="bottom" constant="16" id="EvA-hU-y30"/>
-                            <constraint firstItem="dlu-fU-2kB" firstAttribute="top" secondItem="0hP-IL-hmy" secondAttribute="bottom" constant="32" id="T2a-14-dxK"/>
+                            <constraint firstItem="dlu-fU-2kB" firstAttribute="top" secondItem="0hP-IL-hmy" secondAttribute="bottom" constant="18.333333333333343" id="T2a-14-dxK"/>
                             <constraint firstItem="9Tj-51-eKw" firstAttribute="leading" secondItem="qfD-qf-vaT" secondAttribute="trailing" constant="34" id="Vk0-m6-s5K"/>
                             <constraint firstItem="0hP-IL-hmy" firstAttribute="top" secondItem="qMs-WK-sZ7" secondAttribute="top" constant="31" id="XDK-Pb-amP"/>
                             <constraint firstItem="9Tj-51-eKw" firstAttribute="top" secondItem="dlu-fU-2kB" secondAttribute="bottom" constant="15.67" id="ecr-7o-LVx"/>

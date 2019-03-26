@@ -118,8 +118,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         task.resume()
     }
-    
-<<<<<<< HEAD
+
     
 
    
@@ -127,9 +126,6 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
 
-=======
-
->>>>>>> barcode
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let mapDes = segue.destination as? MapViewController{
             mapDes.titleSite = titleSite.text!
@@ -137,24 +133,17 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
             mapDes.long = String(locationSite.split(separator: ",")[1])
         }
     }
-<<<<<<< HEAD
 
- /*
-=======
 /*
  
->>>>>>> barcode
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navigationController = segue.destination as? UINavigationController,
             let barcodeViewController = navigationController.topViewController as? BarcodeViewController {
             barcodeViewController.delegate = self
         }
     }*/
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> barcode
 
 }
 
