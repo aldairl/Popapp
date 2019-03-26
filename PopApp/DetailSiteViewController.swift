@@ -69,21 +69,29 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                     return
                 }
                 let verData = json["LUGARES"] as? [[String:String]]
+                
+                var encontrado:Bool = false
                 for item in verData! {
+                    
                     let cadena = item["NAME"]
                     
                     if (cadena!.elementsEqual(titulo) == true){
+                        encontrado = true
                         self.detalleSite.text! = item["DESCRIPTION"]!
                         self.locationSite = item["LOCATION"]!
-                        print(self.locationSite.split(separator: ",")[0])
+                        //print(self.locationSite.split(separator: ",")[0])
                         let imagenLink = item["IMAGE"]
                         self.cargarImagen(thumbnailURL: imagenLink!)
                         
                     }
                 else{
-                    print("Loading...")
-                }
+                    }
             }
+                if encontrado {
+                    print("sitio encontrado")
+                }else{
+                    print("no se encuentra el sitio")
+                }
             }catch let jsonError{
             print("error en la serializaciòn",jsonError)
         }
