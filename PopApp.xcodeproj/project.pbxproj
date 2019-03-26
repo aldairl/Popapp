@@ -16,6 +16,7 @@
 		964734A6224868E300D5E3AF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9647349F224868E300D5E3AF /* FMResultSet.m */; };
 		964734A7224868E300D5E3AF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 964734A2224868E300D5E3AF /* FMDatabase.m */; };
 		964734A922487F5000D5E3AF /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964734A822487F5000D5E3AF /* FavoritesTableViewController.swift */; };
+		9648B82422496F0300A9EBE3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648B82322496F0300A9EBE3 /* MapViewController.swift */; };
 		9648C711222DFFCC0096C5CD /* SitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648C710222DFFCC0096C5CD /* SitesTableViewController.swift */; };
 		9660AAA6222E255800B56305 /* DetailSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9660AAA5222E255800B56305 /* DetailSiteViewController.swift */; };
 		96F62B8D222B8F1700F3CA74 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F62B8C222B8F1700F3CA74 /* CategoryTableViewController.swift */; };
@@ -45,6 +46,7 @@
 		964734A1224868E300D5E3AF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		964734A2224868E300D5E3AF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		964734A822487F5000D5E3AF /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		9648B82322496F0300A9EBE3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9648C710222DFFCC0096C5CD /* SitesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesTableViewController.swift; sourceTree = "<group>"; };
 		9660AAA5222E255800B56305 /* DetailSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSiteViewController.swift; sourceTree = "<group>"; };
 		96F62B8C222B8F1700F3CA74 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				A0C39372221C1B6400655C2E /* AppDelegate.swift */,
 				A0C39374221C1B6400655C2E /* ViewController.swift */,
 				A0C39376221C1B6400655C2E /* Main.storyboard */,
+				9648B82322496F0300A9EBE3 /* MapViewController.swift */,
 				9660AAA5222E255800B56305 /* DetailSiteViewController.swift */,
 				964734A822487F5000D5E3AF /* FavoritesTableViewController.swift */,
 				C34B4261222C894200E0B299 /* BarcodeViewController.swift */,
@@ -223,6 +226,7 @@
 				964734A3224868E300D5E3AF /* FMDatabaseAdditions.m in Sources */,
 				96F62B8D222B8F1700F3CA74 /* CategoryTableViewController.swift in Sources */,
 				9648C711222DFFCC0096C5CD /* SitesTableViewController.swift in Sources */,
+				9648B82422496F0300A9EBE3 /* MapViewController.swift in Sources */,
 				C34B4262222C894200E0B299 /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
