@@ -14,8 +14,6 @@ class CategoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -25,7 +23,6 @@ class CategoryTableViewController: UITableViewController {
 
     @IBAction func home(_ sender: UIBarButtonItem) {
          dismiss(animated: true, completion: nil)
-        
     }
     // MARK: - Table view data source
 
@@ -40,7 +37,6 @@ class CategoryTableViewController: UITableViewController {
        // return sitesManager.bookCount
         let categoria = sitesManager.loadSites(lista: 0)
         return categoria.count
-        
     }
 
     
