@@ -4,49 +4,49 @@
                 "ID":"museo",
                 "NAME": "Casa museo Guillermo León Valencia",
                 "IMAGE": "http://www.museoscolombianos.gov.co/museos-del-ministerio-de-cultura/museo-guillermo-leon-valencia/Galera%20Guillermo%20Len%20Valencia/Fachada%202%20(Casa%20Museo%20Guillermo%20Leon%20Valencia%20Popayan).jpg",
-                "LOCATION": "0,0?z=4&q=2.4423504,-76.6114701",
+                "LOCATION": "2.4423504,-76.6114701",
                 "DESCRIPTION":"La Casa Museo Guillermo León Valencia, es el resultado del esfuerzo de la Fundación Guillermo León Valencia, el Ministerio de Cultura y el Museo Nacional de Colombia, con el fin de mantener vigente el legado del Ex – Presidente Valencia y de abrir nuevos espacios para la cultura y las artes en la ciudad de Popayán, que beneficien a la comunidad en general y que ofrezca a propios y extraños la posibilidad de conocer de cerca la historia de nuestros dirigentes"
               },
               {
                 "ID":"museo",
                 "NAME": "Panteón de los Próceres",
                 "IMAGE": "http://portal.unicauca.edu.co/versionP/imagebrowser/view/image/4065/_original",
-                "LOCATION": "geo:0,0?z=4&q=2.4428701,-76.6085504",
+                "LOCATION": "2.4428701,-76.6085504",
                 "DESCRIPTION":"El Panteón de los Próceres de Popayán es el edificio destinado a \"guardar las cenizas de los payaneses que ayudaron a fundar la República: de los que ejercieron la Suprema Magistratura de la Nación; de los que ejecutaron o ejecuten grandes hazañas en servicio de Colombia y alcanzaron o alcancen la suprema eminencia en el país en cualquier campo\", según lo determina el Acuerdo Nº 40 del 15 de octubre  de 1940, expedido por el Consejo Directivo de la Universidad del Cauca, propietaria del monumento nacional."
               },
               {
                 "ID":"museo",
                 "NAME": "Museo casa Mosquera",
                 "IMAGE": "http://www.unicauca.edu.co/versionP/sites/default/files/images/Casa_Mueso_Mosquera1.jpg",
-                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "LOCATION": "2.4423504,-76.6114701",
                 "DESCRIPTION":"La Casa Mosquera es un Museo de la Universidad del Cauca encargado de la protección, conservación y divulgación de las colecciones del Patrimonio Cultural relacionadas con objetos, utensilios y obras de arte colonial pertenecientes a la familia del General Tomás Cipriano de Mosquera y de personalidades que tuvieron relación con ellos y con los acontecimientos políticos y sociales acaecidos en la Nueva Granada en los siglos XVIII y XIX."
               },
               {
                 "ID":"museo",
                 "NAME": "Museo Arquidiocesano de Arte religioso",
                 "IMAGE": "https://media-cdn.tripadvisor.com/media/photo-s/03/d2/f5/a4/modell-eine-privatkapelle.jpg",
-                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "LOCATION": "2.4423504,-76.6114701",
                 "DESCRIPTION":"El Museo Arquidiocesano de Arte Religioso fue creado y reglamentado por los decretos arzobispales 386 del 10 de octubre de 1972 y 026 del 12 de julio de 1977, con el fin de proteger, conservar, catalogar restaurar, exhibir las numerosas obras de propiedad de la Arquidiócesis de Popayán, de las parroquias, iglesias, conventos y en lo posible de particulares."
               },
               {
                 "ID":"museo",
                 "NAME": "Museo Casa Negret",
                 "IMAGE": "https://i1.wp.com/www.popayancultural.co/wp-content/uploads/2018/03/interior_museo_negret2.jpg",
-                "LOCATION": "geo:0,0?z=4&q=2.4423504,-76.6114701",
+                "LOCATION": "2.4423504,-76.6114701",
                 "DESCRIPTION":"La Casa Museo Negret, tiene como sede la antigua casona colonial en la que el Maestro Edgar Negret Dueñas vivió su infancia y juventud. La constituyen dos colecciones: la primera, conformada por obras de distintos periodos de su producción, junto con algunos objetos históricos; la segunda, la del denominado \"Museo Iberoamericano de Arte Moderno de Popayán, MIAMP\", constituida por múltiples piezas importantes del arte colombiano e iberoamericano, del periodo comprendido entre 1940 y 1990."
               },
               {   
                 "ID":"sitio",
                 "NAME":"Puente del Humilladero",
                 "IMAGE":"http://www.fronteras.com.co/sites/default/files/sitios/Humilladero-1_0.jpg",
-                "LOCATION":"2.4440115,-76.6072876",
+                "LOCATION":"2.4423068,-76.6045379",
                 "DESCRIPTION":"El Puente del Humilladero, que con sus dos arcos cruza el río Molino, es una construcción de mampostería levantada en 1873 por Fray Serafín Barbetti. Su nombre se deriva del esfuerzo que antes de la existencia del puente debían hacer los pobladores para subir la pendiente con pesadas cargas hasta la plaza mayor de Popayán. La vía era tan inclinada que muchas veces la gente tenía que subir casi de rodillas"
               },
               {
                 "ID":"sitio",
                 "NAME":"Morro de Tulcán",
                 "IMAGE":"https://www.twoscotsabroad.com/wp-content/uploads/2017/01/El-morro-del-tulcan-Popayan-Colombia.jpg",
-                "LOCATION":"2.4440115,-76.6072876",
+                "LOCATION":"2.4421896,-76.6025802",
                 "DESCRIPTION": "El Morro del Tulcán es el principal sitio arqueológico de Popayán. Este consiste en una pequeña loma no natural en forma de pirámide truncada en el cual se encontraron elementos de la época precolombina, aproximadamente entre los años 500 – 1600 a. C., período que se conoce como de las Sociedades Cacicales Tardías"
               },
               {
@@ -60,7 +60,7 @@
                 "ID":"sitio",
                 "NAME":"Pueblito Patojo",
                 "IMAGE":"https://i2.wp.com/noticias.calendariodecolombia.com/wp-content/uploads/2017/01/Conozca-el-Pueblito-Patojo-en-el-Cauca.jpg",
-                "LOCATION":"2.4440115,-76.6072876",
+                "LOCATION":"2.4423068,-76.6045379",
                 "DESCRIPTION":"El Pueblito Patojo contiene Unas réplicas de la capilla de La Ermita, en cuyo interior está la tumba donde reposan los restos del Quijote y de la Nariz de Popayán como se conoce la Torre del Reloj, con una altura de 5.40 metros, cuatro pequeñas cuadras con 12 locales de una altura de 2.40 metros, cubiertas con teja de barro pisado, para ubicar allí tiendas de artesanías y ventas de lo típico las empanadas y tamales de pipián, champús, birimbí y colaciones."
               },
               {   
