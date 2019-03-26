@@ -112,7 +112,7 @@ class SitesManager {
     
     func removeSite(at index:Int){
         let siteToRemove = sites.remove(at: index)
-        SQLRemoveBook(site: siteToRemove)
+        SQLRemoveSite(site: siteToRemove)
     }
     
     //-------------SQL--------
@@ -155,7 +155,7 @@ class SitesManager {
         db.close() }
     
     
-    func SQLRemoveBook(site: Site) {
+    func SQLRemoveSite(site: Site) {
         guard let db = getOpenDB() else { return  }
         do {
             try db.executeUpdate(
