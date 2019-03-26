@@ -11,9 +11,11 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController {
-    var latitude: CLLocationDegrees = 2.4423504
-    var longitude: CLLocationDegrees = -76.6114701
+    var latitude: CLLocationDegrees = 0
+    var longitude: CLLocationDegrees = 0
     var titleSite = String()
+    var lat = String()
+    var long = String()
 
     @IBOutlet weak var locationMap: MKMapView!
     
@@ -21,12 +23,14 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.latitude = Double(lat)!
+        self.longitude = Double(long)!
         
         let locationSite = CLLocationCoordinate2DMake(self.latitude, self.longitude )
        
         let annotation = MKPointAnnotation()
         
-        let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
+        let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
         
         let region: MKCoordinateRegion = MKCoordinateRegion(center: locationSite, span: span)
         
@@ -35,7 +39,9 @@ class MapViewController: UIViewController {
         
         locationMap.setRegion(region, animated: true)
         locationMap.addAnnotation(annotation)
-    
+        
+        print(latitude)
+        print(longitude)
     }
     
 

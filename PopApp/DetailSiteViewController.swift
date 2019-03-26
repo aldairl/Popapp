@@ -19,6 +19,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     var titleS = String()
     var descriptionsit = String()
     var img = UIImage()
+    var locationSite = String()
     
     
     var delegate: SiteViewControllerDelegate?
@@ -70,14 +71,17 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                 let verData = json["LUGARES"] as? [[String:String]]
                 for item in verData! {
                     let cadena = item["NAME"]
-                    let imagenLink = item["IMAGE"]
+                    
                     if (cadena!.elementsEqual(titulo) == true){
                         self.detalleSite.text! = item["DESCRIPTION"]!
+                        self.locationSite = item["LOCATION"]!
+                        print(self.locationSite.split(separator: ",")[0])
+                        let imagenLink = item["IMAGE"]
                         self.cargarImagen(thumbnailURL: imagenLink!)
-                        print("sitio encontrado")
+                        
                     }
                 else{
-                    print("No se encontrò la lista de sitios")
+                    print("Loading...")
                 }
             }
             }catch let jsonError{
@@ -101,7 +105,11 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if let mapDes = segue.destination as? MapViewController{
+            mapDes.titleSite = titleSite.text!
+            mapDes.lat = String(locationSite.split(separator: ",")[0])
+            mapDes.long = String(locationSite.split(separator: ",")[1])
+        }
     }
     
 
