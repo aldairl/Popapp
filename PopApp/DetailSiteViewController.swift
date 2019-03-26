@@ -19,6 +19,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     var titleS = String()
     var descriptionsit = String()
     var img = UIImage()
+    var locationSite = String()
     
     
     var delegate: SiteViewControllerDelegate?
@@ -69,18 +70,29 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                     return
                 }
                 let verData = json["LUGARES"] as? [[String:String]]
+                
+                var encontrado:Bool = false
                 for item in verData! {
+                    
                     let cadena = item["NAME"]
-                    let imagenLink = item["IMAGE"]
+                    
                     if (cadena!.elementsEqual(titulo) == true){
+                        encontrado = true
                         self.detalleSite.text! = item["DESCRIPTION"]!
+                        self.locationSite = item["LOCATION"]!
+                        //print(self.locationSite.split(separator: ",")[0])
+                        let imagenLink = item["IMAGE"]
                         self.cargarImagen(thumbnailURL: imagenLink!)
-                        print("sitio encontrado")
+                        
                     }
                 else{
-                    print("No se encontrò la lista de sitios")
-                }
+                    }
             }
+                if encontrado {
+                    print("sitio encontrado")
+                }else{
+                    print("no se encuentra el sitio")
+                }
             }catch let jsonError{
             print("error en la serializaciòn",jsonError)
         }
@@ -100,14 +112,22 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     }
     
     
+<<<<<<< HEAD
     /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+=======
+   
+>>>>>>> f2409e4db0517a08c5af025028e4473a2328f254
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let mapDes = segue.destination as? MapViewController{
+            mapDes.titleSite = titleSite.text!
+            mapDes.lat = String(locationSite.split(separator: ",")[0])
+            mapDes.long = String(locationSite.split(separator: ",")[1])
+        }
     }
+<<<<<<< HEAD
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navigationController = segue.destination as? UINavigationController,
@@ -115,6 +135,9 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
             barcodeViewController.delegate = self
         }
     }*/
+=======
+    
+>>>>>>> f2409e4db0517a08c5af025028e4473a2328f254
 
 }
 
