@@ -13,9 +13,9 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     @IBOutlet weak var detalleSite: UILabel!
     @IBOutlet weak var siteImagen: UIImageView!
     @IBOutlet weak var titleSite: UILabel!
+    @IBOutlet weak var favoriteButton: UIButton!
     
-    @IBOutlet weak var imgServer: UIImageView!
-    
+   
     var titleS = String()
     var descriptionsit = String()
     var img = UIImage()
@@ -35,17 +35,20 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detalleSite.text = descriptionsit
-        titleSite.text = titleS
         siteImagen.image = img
+        detalleSite.text = ""
+        titleSite.text = titleS
+        
+        
+        let comparar:String = titleSite.text!
+        infoSitio(titulo: comparar)
 
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func verMas(_ sender: UIButton) {
-        let comparar:String = titleSite.text!
-        infoSitio(titulo: comparar)
+        detalleSite.text = descriptionsit
     }
     
     @IBAction func addFavorite(_ sender: UIButton) {
@@ -53,7 +56,9 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                               des: detalleSite.text!
         )
         
+        self.favoriteButton.isHidden = true
         delegate?.saveSite(siteToSave)
+        
         //dismiss(animated: true, completion: nil)
     }
     
@@ -78,7 +83,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
                     
                     if (cadena!.elementsEqual(titulo) == true){
                         encontrado = true
-                        self.detalleSite.text! = item["DESCRIPTION"]!
+                        self.descriptionsit = item["DESCRIPTION"]!
                         self.locationSite = item["LOCATION"]!
                         //print(self.locationSite.split(separator: ",")[0])
                         let imagenLink = item["IMAGE"]
@@ -112,14 +117,12 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
     }
     
     
-<<<<<<< HEAD
-    /*
+
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-=======
-   
->>>>>>> f2409e4db0517a08c5af025028e4473a2328f254
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let mapDes = segue.destination as? MapViewController{
             mapDes.titleSite = titleSite.text!
@@ -127,17 +130,15 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
             mapDes.long = String(locationSite.split(separator: ",")[1])
         }
     }
-<<<<<<< HEAD
- 
+
+ /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navigationController = segue.destination as? UINavigationController,
             let barcodeViewController = navigationController.topViewController as? BarcodeViewController {
             barcodeViewController.delegate = self
         }
     }*/
-=======
-    
->>>>>>> f2409e4db0517a08c5af025028e4473a2328f254
+
 
 }
 

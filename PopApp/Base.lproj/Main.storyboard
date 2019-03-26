@@ -179,7 +179,7 @@
                     </view>
                     <connections>
                         <outlet property="detalleSite" destination="Vm1-J5-q9m" id="Vnx-L8-XTA"/>
-                        <outlet property="imgServer" destination="dlu-fU-2kB" id="oGt-5h-1jh"/>
+                        <outlet property="favoriteButton" destination="9Tj-51-eKw" id="XhF-tH-Veo"/>
                         <outlet property="siteImagen" destination="dlu-fU-2kB" id="jxS-Xm-DTv"/>
                         <outlet property="titleSite" destination="0hP-IL-hmy" id="2Vy-Uf-HvU"/>
                     </connections>
@@ -593,6 +593,6 @@
         <image name="portada" width="512" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bYt-kc-FaT"/>
+        <segue reference="AGO-5q-Fvm"/>
     </inferredMetricsTieBreakers>
 </document>
