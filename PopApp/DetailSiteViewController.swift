@@ -111,15 +111,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
         task.resume()
     }
     
-    
-<<<<<<< HEAD
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-=======
-   
->>>>>>> f2409e4db0517a08c5af025028e4473a2328f254
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let mapDes = segue.destination as? MapViewController{
             mapDes.titleSite = titleSite.text!
@@ -127,7 +119,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
             mapDes.long = String(locationSite.split(separator: ",")[1])
         }
     }
-<<<<<<< HEAD
+/*
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navigationController = segue.destination as? UINavigationController,
@@ -135,9 +127,7 @@ class DetailSiteViewController: UIViewController, URLSessionDelegate {
             barcodeViewController.delegate = self
         }
     }*/
-=======
     
->>>>>>> f2409e4db0517a08c5af025028e4473a2328f254
 
 }
 

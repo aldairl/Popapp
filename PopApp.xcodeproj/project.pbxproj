@@ -128,12 +128,12 @@
 				9648B82322496F0300A9EBE3 /* MapViewController.swift */,
 				9660AAA5222E255800B56305 /* DetailSiteViewController.swift */,
 				964734A822487F5000D5E3AF /* FavoritesTableViewController.swift */,
-				C34B4261222C894200E0B299 /* BarcodeViewController.swift */,
 				96F62B8E222B941000F3CA74 /* Site.swift */,
 				962E436D222B9CAC00872A7B /* SitesManager.swift */,
 				96F62B8C222B8F1700F3CA74 /* CategoryTableViewController.swift */,
 				9648C710222DFFCC0096C5CD /* SitesTableViewController.swift */,
 				A0C39379221C1B6700655C2E /* Assets.xcassets */,
+				C34B4261222C894200E0B299 /* BarcodeViewController.swift */,
 				A0C3937B221C1B6700655C2E /* LaunchScreen.storyboard */,
 				A0C3937E221C1B6700655C2E /* Info.plist */,
 			);
